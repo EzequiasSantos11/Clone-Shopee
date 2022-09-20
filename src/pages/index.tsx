@@ -1,11 +1,12 @@
 import type { NextPage } from 'next';
+import { Container } from '../styles/homeStyles';
 
 const Home: NextPage = () => {
   return (
-    <h1>
+    <Container>
       Home
-    </h1>
+    </Container>
   )
-}
+} 
 
 export default Home

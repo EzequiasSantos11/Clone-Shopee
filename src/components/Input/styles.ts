@@ -1,0 +1,53 @@
+import styled from "styled-components";
+
+
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0 auto;
+  width: 60%;
+  position: relative;
+  label{
+    font-size: 18px;
+  }
+  input{
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #AEAEAE;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #AEAEAE;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #AEAEAE;
+    }
+  }
+  .password{
+    position: relative;
+    svg{
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      right: 10px;
+      z-index: 999;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+  svg{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 20px;
+    color: #AEAEAE;
+  }
+`;
