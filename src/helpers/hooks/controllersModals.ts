@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export function openCreateEventsModal(){
+export function useOpenCreateEventsModal(){
   const [ openModal, setOpenModal ] = useState(false);
   return {
     openModal,

@@ -13,7 +13,7 @@ export default function ListEvents(){
     <Container>
       <h1>ListEvents</h1>
       <Wrapper>
-        { allEvents.reverse().map((item, index) =>(
+        { allEvents.map((item, index) =>(
           <>
             <Card key={index}>
               <div className="title">
