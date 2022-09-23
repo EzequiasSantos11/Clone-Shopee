@@ -7,13 +7,14 @@ interface Props {
   iconItem?: React.ComponentElement<HTMLImageElement, any>,
   iconSrc?: string,
   titleItem: string,
+  active?: boolean
 };
 
-export default function ItemList({ linkItem, iconItem, iconSrc, titleItem }: Props){
+export default function ItemList({ linkItem, iconItem, iconSrc, titleItem, active }: Props){
   return(
-    <Container>
+    <Container className={active ? "active" : ""}>
       <Link href={linkItem ? linkItem : ""}>
-        <a>
+        <a >
           {iconItem ? (
             <>
               {iconItem}

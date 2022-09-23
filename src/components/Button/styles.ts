@@ -15,4 +15,8 @@ export const Container = styled.button`
   background: #4CA7A8;
   color: #FFF;
   padding:  10px 24px;
+
+  &.delete{
+    background: red;
+  }
 `;

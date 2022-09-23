@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Container>
       <Sidebar/>
-      <Header/>
       <Component {...pageProps} />
       <GlobalStyles/>
     </Container>

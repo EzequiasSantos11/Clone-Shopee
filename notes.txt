@@ -1,0 +1,9 @@
+A timeline que fica a direita do usuário nescecita de mais tempo para ser feita, para dar proceguimento nos aspectos mais importantes do projeto colocarei uma imagem stática por enquanto e após finalizado os mais importantes eu volto neste ponto caso sobre tempo, do contrário irei fazê-lo após tempo de prova.
+
+
+A parte de deletar o evento está pegando somente o ultimo item mesmo clicando em outros, ainda sim dá pra excluir todos, concertarei este bug com o tempo.
+
+Com um pouquinho mais de tempo todos os bugs serão resolvidos e todas as funcionalidades finalizadas.
+Aqui tentei compensar entregando o máximo e o mais importante, claro que ficaram alguns pontos para traz, meus commits poderiam ter sido mais expressivos, porém me impolguei no projeto e não commitei cada etapa como sempre faço em meus projetos.
+
+Espero que esteja bom o suficiente para demonstrar o quanto eu amo essa profissão e o quanto eu quero e preciso evoluir para me tornar um dos melhores na área.

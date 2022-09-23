@@ -31,6 +31,26 @@ export const Container = styled.section`
       color: #AEAEAE;
     }
   }
+  textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #AEAEAE;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #AEAEAE;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #AEAEAE;
+    }
+  }
   .password{
     position: relative;
     svg{

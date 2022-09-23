@@ -3,10 +3,10 @@ import { Input } from "../Input";
 import { Container } from "./styles";
 
 interface Props {
-    
+  createEvent: ()=>void;
 };
 
-export default function Header(props: Props){
+export default function Header({createEvent}: Props){
   return(
     <Container>
       <div className="date">
@@ -14,7 +14,7 @@ export default function Header(props: Props){
         <p>Quinta-feira - 4 de Jan - 2022</p>
       </div>
       <div className="actions">
-        <Button textButton="+Criar evento"/>
+        <Button textButton="+Criar evento" onClick={createEvent}/>
         <Input  type="search" placeholder="Search task, event, calendar" />
       </div>
       <div className="icons">

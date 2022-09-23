@@ -9,6 +9,8 @@ export const Container = styled.aside`
   border-right: 1px solid #E8E8E8;
   padding-top: 43px;
   background: #FFF;
+  position: fixed;
+  left: 0;
 `;
 
 export const Logo = styled.div`
@@ -28,8 +30,15 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: column;
   height: 48px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   gap: 12px;
   margin-top: 12px;
+  .account{
+    color: #AEAEAE;
+  }
+  .system{
+    color: #AEAEAE;
+    margin-top: 50px;
+  }
 `;

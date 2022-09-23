@@ -1,17 +1,21 @@
-import { HTMLInputTypeAttribute, useState } from "react";
+import { InputHTMLAttributes, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { RiSearch2Line } from "react-icons/ri";
+import { inputTimeMask } from "../../helpers/inputMasks";
 import { Container } from "./styles";
 
-interface Props {
+interface Props extends InputHTMLAttributes<HTMLInputElement>{
   label?: string,
-  type: HTMLInputTypeAttribute,
+  type: string,
   placeholder?: string,
+  onchange?: (e: any)=>void;
 };
 
-export function Input({ label, type, placeholder, ...rest }: Props){
+export function Input({ label, type, placeholder, onchange, ...rest }: Props){
 
   const [ passwordVisible, setPasswordVisible ] = useState(false);
+
+  
   
   switch(type){
     case "password":
@@ -37,6 +41,22 @@ export function Input({ label, type, placeholder, ...rest }: Props){
         </Container>
       )
       break;
+    case "textarea":
+      return(
+        <Container>
+          <label>{label}</label>
+          <textarea 
+            name={label} 
+            id={label} 
+            cols={30} 
+            rows={5} 
+            placeholder={placeholder}
+            onChange={onchange}
+          >
+          </textarea>
+        </Container>
+      )
+      break
     case "search":
       return(
         <Container>
@@ -49,7 +69,7 @@ export function Input({ label, type, placeholder, ...rest }: Props){
       return(
         <Container>
           <label>{label}</label>
-          <input {...rest} placeholder={placeholder} />
+          <input {...rest} type={type} placeholder={placeholder} />
         </Container>
       )
   }

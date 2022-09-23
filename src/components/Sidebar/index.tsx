@@ -14,17 +14,17 @@ export default function Sidebar(props: Props){
         <img src="/logo.svg" alt="" />
       </Logo>
       <Nav>
-        <ItemList titleItem="Agenda" linkItem="/" iconItem={<BsCalendar4Week/>}/>
+        <ItemList active titleItem="Agenda" linkItem="/" iconItem={<BsCalendar4Week/>}/>
         <ItemList titleItem="Mensagens" linkItem="/" iconSrc={"/message.svg"}/>
         <ItemList titleItem="Relatórios" linkItem="/" iconSrc={"/graphic.svg"}/>
         
-        <span>My account</span>
+        <span className="account">My account</span>
         
         <ItemList titleItem="Meus eventos" linkItem="/" iconItem={<BiUserCircle/>}/>
         <ItemList titleItem="Meu time" linkItem="/" iconSrc={"/people.svg"}/>
         <ItemList titleItem="Minhas atividades" linkItem="/" iconSrc={"/board.svg"}/>
         
-        <span>System</span>
+        <span className="system">System</span>
         <ItemList titleItem="Configurações" linkItem="/" iconSrc={"/setting.svg"}/>
         <ItemList titleItem="Sair" linkItem="/" iconSrc={"/logout.svg"}/>
       </Nav>
