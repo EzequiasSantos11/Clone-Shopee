@@ -4,10 +4,10 @@ interface Props {
     
 };
 
-export function Header(props: Props){
+export function Aside(props: Props){
   return(
     <Container>
-      <h1>Header</h1>
+      <h1>Aside</h1>
     </Container>
   )
 };

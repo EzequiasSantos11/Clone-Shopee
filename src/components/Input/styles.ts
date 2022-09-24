@@ -19,6 +19,9 @@ export const Container = styled.section`
     padding: 0 30px;
     font-size: 16px;
     font-weight: 400;
+    border-radius: 8px;
+    background: #514769;
+    color: #f1f1f1;
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: #AEAEAE;
     }
@@ -52,6 +55,7 @@ export const Container = styled.section`
     }
   }
   .password{
+    display: flex;
     position: relative;
     svg{
       position: absolute;
@@ -63,11 +67,5 @@ export const Container = styled.section`
       cursor: pointer;
     }
   }
-  svg{
-    position: absolute;
-    left: 0;
-    top: 30%;
-    font-size: 20px;
-    color: #AEAEAE;
-  }
+ 
 `;

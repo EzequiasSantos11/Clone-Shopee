@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: green;
-  grid-area: h;
+  justify-content: center;
+  background: #121214;
+  grid-area: a;
 `;

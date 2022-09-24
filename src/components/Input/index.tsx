@@ -1,7 +1,6 @@
 import { InputHTMLAttributes, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { RiSearch2Line } from "react-icons/ri";
-import { inputTimeMask } from "../../helpers/inputMasks";
 import { Container } from "./styles";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement>{
