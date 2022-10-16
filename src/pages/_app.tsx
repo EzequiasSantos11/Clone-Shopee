@@ -1,14 +1,13 @@
 import type { AppProps } from 'next/app';
-import { Layout } from '../components/Layout';
+import { Header } from '../components/Header';
 import GlobalStyles from '../styles/globalStyles';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Header/>
+      <Component {...pageProps} />
       <GlobalStyles/>
     </>
   )

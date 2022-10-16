@@ -1,11 +1,16 @@
 import type { NextPage } from 'next';
-import { LoginForm } from '../components/Forms/LoginForm';
+import { Banner } from '../components/Banner';
+import { Products } from '../components/Products';
 import { Container } from '../styles/homeStyles';
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <LoginForm/>
+      <Banner/>
+      <div className="wrapper">
+        <Products/>
+        <div className="div"></div>
+      </div>
     </Container>
   )
 } 

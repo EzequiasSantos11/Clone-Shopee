@@ -13,5 +13,8 @@ export default createGlobalStyle`
     text-decoration: none;
     list-style: none;
   }
+  section{
+    padding-top: 8rem;
+  }
   
 `;

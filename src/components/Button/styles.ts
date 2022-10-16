@@ -8,15 +8,16 @@ export const Container = styled.button`
   width: 144px;
   height: 38px;
   margin-top: 10px;
-  border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   cursor: pointer;
-  background: #1C99B2;
+  background: transparent;
+  background: #F05D40;
   color: #FFF;
-  padding:  10px 24px;
-
   &.delete{
-    background: red;
+    background: #ffdfdf;
+    color: #ee4d2d;
+    border-radius: 6px;
+    border: 1px solid #F05D40;
   }
 `;

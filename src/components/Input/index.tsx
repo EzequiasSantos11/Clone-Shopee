@@ -1,6 +1,5 @@
 import { InputHTMLAttributes, useState } from "react";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { RiSearch2Line } from "react-icons/ri";
+import Icons from "../Icons";
 import { Container } from "./styles";
 
 interface Props extends InputHTMLAttributes<HTMLInputElement>{
@@ -24,9 +23,9 @@ export function Input({ label, type, placeholder, onchange, ...rest }: Props){
           <div className="password">
             <input {...rest} type={passwordVisible ? "text" : "password"}/>
             { passwordVisible ? (
-              <AiOutlineEye onClick={()=>setPasswordVisible(false)}/>
+              <Icons.IconAi.AiOutlineEye onClick={()=>setPasswordVisible(false)}/>
             ):(
-              <AiOutlineEyeInvisible onClick={()=>setPasswordVisible(true)}/>
+              <Icons.IconAi.AiOutlineEyeInvisible onClick={()=>setPasswordVisible(true)}/>
             )}
           </div>
         </Container>
@@ -58,8 +57,10 @@ export function Input({ label, type, placeholder, onchange, ...rest }: Props){
       break
     case "search":
       return(
-        <Container>
-          <RiSearch2Line/>
+        <Container className="search">
+          <div className="icon">
+            <Icons.IconRi.RiSearch2Line/>
+          </div>
           <input {...rest} placeholder={placeholder} />
         </Container>
       )
